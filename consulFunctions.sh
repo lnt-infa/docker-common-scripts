@@ -26,6 +26,6 @@ function consul_update_dns() {
 }
 #}}}
 
-if [ $UPDATE_DNS ]; then
+if [ "$UPDATE_DNS" = "true" ]; then
   consul_update_dns
 fi
